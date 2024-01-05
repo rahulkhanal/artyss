@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./home.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Tab from "../components/Tab";
 
 const Home = () => {
   const [bannerData, setBannerDta] = useState([
@@ -108,6 +109,7 @@ const Home = () => {
         </div>
       </div>
       <br />
+      <Tab />
       <div className="subscribe">
         <main>
           <h1>Subscribe to our Email</h1>
