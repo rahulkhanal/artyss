@@ -1,267 +1,269 @@
 .Navigation a {
-    color: #0E416A;
-    text-decoration: none;
-    margin-left: 2rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-bottom: 2px solid #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  padding: 8px;
+  color: #0e416a;
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-bottom: 2px solid #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.Navigation a:hover {
+  border-bottom: 2px solid #0e416a;
+}
+.Navigation {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.body,
+.body2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 50%; */
+}
+.Logo > img {
+  width: 100%;
+}
+.HamBurger {
+  display: none;
+}
+.crossBtn {
+  display: none;
+}
+.loginBtn {
+  padding: 0.9rem 1rem !important;
+  background-color: #0e416a;
+  color: #fff !important;
+  border-radius: 10px;
+}
+.cart {
+  bottom: 1rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  /* animation-name: anamiteCart 1s linear infinite;
+    -webkit-animation: anamiteCart 1s linear infinite; */
+  cursor: pointer;
+}
+
+@-webkit-keyframes anamiteCart {
+  0% {
+    scale: 1;
   }
-  
-  .Navigation {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 10rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  50% {
+    scale: 1.1;
   }
-  .body,
-  .body2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* width: 50%; */
+  100% {
+    scale: 1;
   }
-  .Logo > img {
+}
+@keyframes anamiteCart {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@media (min-width: 0px) and (max-width: 400px) {
+  .Navigation a {
+    margin-left: 0;
+    display: block !important;
     width: 100%;
+  }
+  .allignResponsive {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Navigation {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    height: 4.3rem;
   }
   .HamBurger {
-    display: none;
+    display: block;
   }
   .crossBtn {
-    display: none;
+    color: #ed1c22;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+  }
+  .body2 {
+    padding-top: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(0%);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px gray;
+  }
+  .body a,
+  .body2 a {
+    margin-top: 1.5rem;
   }
   .loginBtn {
-    padding: 0.8rem 1rem;
-    background-color: #0E416A;
-    color: #fff !important;
-    border-radius: 10px;
+    width: 80% !important;
   }
   .cart {
-    bottom: 1rem;
-    right: 2rem;
-    display: flex;
-    align-items: center;
-    /* animation-name: anamiteCart 1s linear infinite;
-    -webkit-animation: anamiteCart 1s linear infinite; */
-    cursor: pointer;
+    position: fixed;
+    animation: none;
+    scale: 1.1 !important;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
   }
-  .cart:hover {
-    color: #1b00bf !important;
+}
+
+@media (min-width: 401px) and (max-width: 1024px) {
+  .Navigation a {
+    margin-left: 0 !important;
+    padding: 1rem 0rem;
   }
-  @-webkit-keyframes anamiteCart {
-    0% {
-      scale: 1;
-    }
-    50% {
-      scale: 1.1;
-    }
-    100% {
-      scale: 1;
-    }
-  }
-  @keyframes anamiteCart {
-    0% {
-      scale: 1;
-    }
-    50% {
-      scale: 1.1;
-    }
-    100% {
-      scale: 1;
-    }
-  }
-  @media (min-width: 0px) and (max-width: 400px) {
-    .Navigation a {
-      margin-left: 0;
-      display: block !important;
-      width: 100%;
-    }
-    .allignResponsive {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .Navigation {
-      padding: 0.5rem 1rem;
-      flex-direction: column;
-      height: 4.3rem;
-    }
-    .HamBurger {
-      display: block;
-    }
-    .crossBtn {
-      color: #ed1c22;
-      display: block;
-      position: absolute;
-      left: 10px;
-      top: 10px;
-    }
-    .body {
-      position: fixed;
-      top: 0;
-      right: 0;
-      flex-direction: column;
-      text-align: center;
-      width: 300px;
-      height: 100vh;
-      justify-content: flex-start;
-      transform: translateX(100%);
-      transition: all 0.3s ease;
-    }
-    .body2 {
-      padding-top: 2rem;
-      position: fixed;
-      top: 0;
-      right: 0;
-      flex-direction: column;
-      background-color: #fff;
-      text-align: center;
-      width: 300px;
-      height: 100vh;
-      align-items: center;
-      justify-content: flex-start;
-      transform: translateX(0%);
-      transition: all 0.3s ease;
-      box-shadow: 0 0 8px gray;
-    }
-    .body a,
-    .body2 a {
-      margin-top: 1.5rem;
-    }
-    .loginBtn {
-      width: 80% !important;
-    }
-    .cart {
-      position: fixed;
-      animation: none;
-      scale: 1.1 !important;
-      background-color: #fff;
-      padding: 0.5rem;
-      border-radius: 50%;
-    }
-  }
-  
-  @media (min-width: 401px) and (max-width: 1024px) {
-    .Navigation a {
-      margin-left: 0 !important;
-      padding: 1rem 0rem;
-    }
-    .allignResponsive {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .Navigation {
-      padding: 0.5rem 2rem;
-      flex-direction: column;
-      height: 4.3rem;
-    }
-    .HamBurger {
-      display: block;
-    }
-    .crossBtn {
-      color: #0E416A;
-      display: block;
-      position: absolute;
-      left: 10px;
-      top: 10px;
-    }
-    .body {
-      position: fixed;
-      top: 0;
-      right: 0;
-      flex-direction: column;
-      background-color: #fff;
-      text-align: center;
-      width: 300px;
-      height: 100vh;
-      justify-content: flex-start;
-      transform: translateX(100%);
-      transition: all 0.3s ease;
-    }
-    .body2 {
-      padding-top: 2rem;
-      position: fixed;
-      top: 0;
-      right: 0;
-      flex-direction: column;
-      background-color: #fff;
-      text-align: center;
-      width: 300px;
-      height: 100vh;
-      justify-content: flex-start;
-      transform: translateX(0%);
-      transition: all 0.3s ease;
-      box-shadow: 0 0 8px gray;
-    }
-    .body a,
-    .body2 a {
-      margin-top: 1.5rem;
-    }
-    .loginBtn {
-      width: 80%;
-    }
-    .cart {
-      position: fixed;
-      animation: none;
-      scale: 1.5 !important;
-      background-color: #fff;
-      padding: 0.5rem;
-      border-radius: 50%;
-    }
-  }
-  .Navigation2 {
-    padding: 1rem;
-    background-color: #0E416A;
-    color: #fff;
-    padding-bottom: 5px;
-    /* box-shadow: 0 0 8px #d3d3d3; */
-    align-items: flex-end;
-    /* border-bottom: 1px solid #d3d3d3; */
-  }
-  .Navigation2 input {
-    border: none;
-    border-bottom: 1px solid #fff;
+  .allignResponsive {
     width: 100%;
-    font-size: 1rem;
-    padding: 7px;
-    padding-left: 30px;
-    background: none;
-    /* accent-color: #fff; */
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  .Navigation2 input::placeholder {
-    color: #ddd;
+  .Navigation {
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+    height: 4.3rem;
   }
-  Navigation2 input::-ms-input-placeholder {
-    color: #ddd;
+  .HamBurger {
+    display: block;
   }
-  .Navigation2 input::-webkit-search-cancel-button {
-    /* display: none; */
-  }
-  .Navigation2 input:focus {
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #fff;
-  }
-  .navigationSearch {
-    position: relative;
-    width: 700px;
-    /* background-color: red; */
-  }
-  .navigationSearch i {
+  .crossBtn {
+    color: #0e416a;
+    display: block;
     position: absolute;
-    left: 0px;
+    left: 10px;
+    top: 10px;
   }
-  @media (min-width: 0px) and (max-width: 1024px) {
-    .navigationSearch {
-      display: none !important;
-    }
+  .body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
   }
-  
+  .body2 {
+    padding-top: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    width: 300px;
+    height: 100vh;
+    justify-content: flex-start;
+    transform: translateX(0%);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px gray;
+  }
+  .body a,
+  .body2 a {
+    margin-top: 1.5rem;
+  }
+  .loginBtn {
+    width: 80%;
+  }
+  .cart {
+    position: fixed;
+    animation: none;
+    scale: 1.5 !important;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+}
+.Navigation2 {
+  padding: 1rem;
+  background-color: #0e416a;
+  color: #fff;
+  padding-bottom: 5px;
+  /* box-shadow: 0 0 8px #d3d3d3; */
+  align-items: flex-end;
+  /* border-bottom: 1px solid #d3d3d3; */
+}
+.Navigation2 input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  font-size: 1rem;
+  padding: 7px;
+  padding-left: 30px;
+  background: none;
+  /* accent-color: #fff; */
+  color: #fff;
+}
+.Navigation2 input::placeholder {
+  color: #ddd;
+}
+Navigation2 input::-ms-input-placeholder {
+  color: #ddd;
+}
+.Navigation2 input::-webkit-search-cancel-button {
+  /* display: none; */
+}
+.Navigation2 input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+.navigationSearch {
+  position: relative;
+  width: 700px;
+  /* background-color: red; */
+}
+.navigationSearch i {
+  position: absolute;
+  left: 0px;
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+  .navigationSearch {
+    display: none !important;
+  }
+}

@@ -59,23 +59,24 @@
     padding: 1rem;
     font-size: 1rem;
   }
-  .home2-f{
-    width: 60%;
-    h1{
-        font-weight: 400;
-        color: #0e416a;
-        font-size: 2.4rem;
+  .home2-f {
+    width: 55%;
+    h1 {
+      font-weight: 400;
+      color: #0e416a;
+      font-size: 2.4rem;
     }
-    p{
-        word-spacing: 1px;
-        line-height: 1.4rem;
+    p {
+      word-spacing: 1px;
+      line-height: 1.4rem;
     }
   }
-  .img-layer{
+  .img-layer {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    img{
-        width: 30%;
+    img {
+      width: 30%;
     }
   }
 }

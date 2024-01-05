@@ -12,7 +12,7 @@ const Navigation = () => {
   const navLinkStyle = ({ isActive }) => {
     return {
       fontWeight: isActive ? "500" : "none",
-      color: isActive ? "#ed1c22" : "",
+      // color: isActive ? "#ed1c22" : "",
     };
   };
   return (
