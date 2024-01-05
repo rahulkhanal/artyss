@@ -1,5 +1,7 @@
 import Logo from "../assets/media/logo.png";
 // import HamBurger from "./assets/hamburger.png";
+import { RxHamburgerMenu as HamBurger } from "react-icons/rx";
+
 import NavCss from "./Navigation.module.css";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -27,12 +29,7 @@ const Navigation = () => {
             />
           </div>
           <div className={NavCss.HamBurger}>
-            <img
-              //   src={HamBurger}
-              alt="Nepal Canvas"
-              width={25}
-              onClick={() => setShowMenu(true)}
-            />
+            <HamBurger size={25} onClick={() => setShowMenu(true)} />
           </div>
         </div>
         <ul className={showMenu ? NavCss.body2 : NavCss.body}>

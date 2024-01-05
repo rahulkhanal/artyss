@@ -1,3 +1,14 @@
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .slider-container {
   width: 100%;
 }
@@ -7,6 +18,10 @@
   justify-content: left;
   align-items: center;
   padding: 0 5rem;
+  @include mobile {
+    padding: 1rem;
+    height: 70vh !important;
+  }
 }
 .slider-container img {
   width: 100%;
@@ -24,6 +39,9 @@
   font-size: 2rem;
   padding: 4px;
   margin-top: 3rem;
+  @include mobile {
+    font-size: 1.5rem;
+  }
 }
 .banner-body span::before {
   content: "";
@@ -48,9 +66,16 @@
   display: flex;
   width: 80%;
   align-items: center;
+  text-align: center;
   margin: auto;
   padding: 3rem 0;
   gap: 3rem;
+  @include mobile {
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 7px;
+  }
   button {
     background-color: #b6a748;
     border: none;
@@ -58,9 +83,16 @@
     color: #fff;
     padding: 1rem;
     font-size: 1rem;
+    @include mobile {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
   }
   .home2-f {
     width: 55%;
+    @include mobile() {
+      width: 100%;
+    }
     h1 {
       font-weight: 400;
       color: #0e416a;
@@ -77,10 +109,14 @@
     gap: 1rem;
     img {
       width: 30%;
+      //   min-width: 250px;
+      margin: auto;
     }
   }
 }
 .home2-s img {
+  min-width: 300px;
+  max-width: 100%;
   border-radius: 0 1rem 0 1rem;
 }
 .home3 {
@@ -88,21 +124,35 @@
   background-color: red;
   background: url("../assets/media/mostbanner.6464cfdd.jpg");
   height: 60vh;
+  @include mobile {
+    padding: 2.5rem 7px;
+    height: 70vh;
+  }
   div {
     height: 80%;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include mobile {
+      width: 100%;
+      text-align: left;
+    }
     p {
       word-spacing: 2px;
       line-height: 1.4rem;
       font-size: 1.05rem;
+      @include mobile {
+        text-align: left;
+      }
     }
     h1 {
       font-size: 2.5rem;
       font-weight: 400;
       color: #0e416a;
+      @include mobile {
+        font-size: 2rem;
+      }
     }
   }
   button {

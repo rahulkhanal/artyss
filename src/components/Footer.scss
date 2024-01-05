@@ -1,0 +1,79 @@
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+footer {
+  background-color: #295f8b;
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+  padding: 4rem 10rem;
+  justify-content: space-between;
+  font-size: 1rem;
+
+  @include mobile {
+    padding: 7px;
+  }
+  .main-div {
+    width: 30%;
+    min-width: 300px;
+    @include mobile {
+      width: 100%;
+      text-align: center;
+    }
+    p {
+      text-align: left;
+      margin: auto;
+      width: fit-content;
+      @include mobile {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .mid-footer {
+    display: flex;
+    justify-content: space-between;
+    // gap: 2rem;
+    width: 30%;
+    @include mobile {
+      width: 100%;
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+
+  li {
+    list-style: none;
+    line-height: 2rem;
+    text-align: left;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  @include mobile {
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+.footer-span {
+  background-color: #295f8b;
+  color: #fff;
+  text-align: center;
+}
