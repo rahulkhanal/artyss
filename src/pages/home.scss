@@ -44,3 +44,41 @@
     scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
   z-index: -1;
 }
+.home2 {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  padding: 3rem 0;
+  gap: 3rem;
+  button {
+    background-color: #b6a748;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .home2-f{
+    width: 60%;
+    h1{
+        font-weight: 400;
+        color: #0e416a;
+        font-size: 2.4rem;
+    }
+    p{
+        word-spacing: 1px;
+        line-height: 1.4rem;
+    }
+  }
+  .img-layer{
+    display: flex;
+    gap: 1rem;
+    img{
+        width: 30%;
+    }
+  }
+}
+.home2-s img {
+  border-radius: 0 1rem 0 1rem;
+}

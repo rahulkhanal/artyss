@@ -60,6 +60,35 @@ const Home = () => {
           );
         })}
       </Carousel>
+      <div className="home2">
+        <div className="home2-f">
+          <h1>Who are we?</h1>
+          <p>
+            Artyss Design Studio is a team of passionate and experienced
+            designers who are committed to providing you with an experience
+            unlike any other, where you can enjoy great design and
+            craftsmanship. We are experts in creating personalized designs at
+            affordable prices. We work closely with our customers to understand
+            their ideas and help them convert them into reality.
+          </p>
+          <br />
+          <br />
+          <div className="img-layer">
+            <img
+              src="/src/assets/media/interior-design-living-area.1ac04d0b.jpg"
+              alt=""
+            />
+            <img src="/src/assets/media/interier-2.97a7c44c.jpg" alt="" />
+            <img src="/src/assets/media/interier-3.e937159f.jpg" alt="" />
+          </div>
+          <br />
+          <br />
+          <button>Learn More</button>
+        </div>
+        <div className="home2-s">
+          <img src="/src/assets/media/aboutImg.277b4001.jpg" alt="" srcset="" />
+        </div>
+      </div>
     </>
   );
 };
