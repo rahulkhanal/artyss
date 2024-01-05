@@ -89,6 +89,25 @@ const Home = () => {
           <img src="/src/assets/media/aboutImg.277b4001.jpg" alt="" srcset="" />
         </div>
       </div>
+      <div className="home3">
+        <div>
+          <h1>Bringing your dream house into a reality!</h1>
+          <br />
+          <br />
+          <p>
+            The designers at Artyss are acutely aware of the styles of design
+            and aim to combine innovation and practicality in our designs. We
+            give ample time to understand the needs of our customers and offer
+            transparent services from the conception to the execution of a
+            project. Every house should reflect the personality of those who
+            reside in it. At Artyss, we strive to fulfil this goal.
+          </p>
+          <br />
+          <br />
+          <button>Book a Consultation</button>
+        </div>
+      </div>
+      <br />
     </>
   );
 };
