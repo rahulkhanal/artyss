@@ -165,3 +165,44 @@
     width: fit-content;
   }
 }
+
+.subscribe {
+  background-image: url("../assets/media/ctabanner.9e543a43.png");
+  display: grid;
+  place-items: center;
+  color: #fff;
+  height: 50vh;
+  @include mobile {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+  }
+  input,
+  button {
+    padding: 1rem;
+    font-size: 1rem;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  button{
+    background-color: #295F8B;
+    border: 2px solid #295F8B;
+    color: #fff;
+  }
+  main {
+    text-align: center;
+  }
+}

@@ -108,6 +108,17 @@ const Home = () => {
         </div>
       </div>
       <br />
+      <div className="subscribe">
+        <main>
+          <h1>Subscribe to our Email</h1>
+          <h2>list to receive design inspirations straight to your inbox!</h2>
+          <br />
+          <div>
+            <input type="email" placeholder="Your Email Address" />
+            <button>Subscribe</button>
+          </div>
+        </main>
+      </div>
     </>
   );
 };
