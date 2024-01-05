@@ -1,0 +1,46 @@
+.slider-container {
+  width: 100%;
+}
+.banner-body {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0 5rem;
+}
+.slider-container img {
+  width: 100%;
+}
+.banner-body h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.banner-body span {
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  color: #0e416a;
+  font-size: 2rem;
+  padding: 4px;
+  margin-top: 3rem;
+}
+.banner-body span::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  --bg-opacity: 1;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: -12deg;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x))
+    translateY(var(--transform-translate-y)) rotate(var(--transform-rotate))
+    skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y))
+    scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  z-index: -1;
+}

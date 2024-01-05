@@ -1,47 +1,66 @@
-import React, { useState } from "react";
-import Slider from "react-slick";
-import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-
-const NextArrow = ({ onClick }) => (
-  <div className="custom-arrow-next" onClick={onClick}>
-    <GrFormNext size={20} className="arrow" color="red" />
-  </div>
-);
-
-const PrevArrow = ({ onClick }) => (
-  <div className="custom-arrow-prev" onClick={onClick}>
-    <GrFormPrevious size={20} className="arrow" />
-  </div>
-);
+import React, { useRef, useState } from "react";
+import "./home.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 const Home = () => {
-  const [bannerData, setBannerDta] = useState([]);
-  const settings = {
-    dots: false,
-    fade: true,
-    cssEase: "linear",
-    autoplay: true,
-    speed: 500,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    arrows: false,
-  };
+  const [bannerData, setBannerDta] = useState([
+    {
+      id: 1,
+      title: "Thoughtfully curated Interiors Solution",
+      slogan: "Artify Your Living Space",
+      img: "/src/assets/media/banner1.62cc4589.png",
+    },
+    {
+      id: 2,
+      title: "Thoughtfully curated Interiors Solution",
+      slogan: "Artify Your Living Space",
+      img: "/src/assets/media/banner2.a5005769.png",
+    },
+    {
+      id: 3,
+      title: "Thoughtfully curated Interiors Solution",
+      slogan: "Artify Your Living Space",
+      img: "/src/assets/media/banner3.916aefb7.png",
+    },
+  ]);
   return (
-    <div>
-      <Slider {...settings}>
+    <>
+      <Carousel
+        className="heroBanner"
+        showStatus={false}
+        autoPlay={true}
+        showArrows={true}
+        infiniteLoop={true}
+        showIndicators={true}
+        showThumbs={false}
+        swipeable={true}
+      >
         {bannerData.map((item, index) => {
           return (
-            <article key={index}>
-              <div className="home-carousel-overlay"></div>
-              {/* <img
-                  src={item.img}
-                  alt={item.title}
-                /> */}
-            </article>
+            <div key={item.id}>
+              <div
+                className="banner-body"
+                style={{
+                  backgroundImage: `url(${item.img})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  width: "100%",
+                  height: "70vh",
+                }}
+              >
+                <article>
+                  <h1>{item.title}</h1>
+                  <span>
+                    <strong>{item.slogan}</strong>
+                  </span>
+                </article>
+              </div>
+            </div>
           );
         })}
-      </Slider>
-    </div>
+      </Carousel>
+    </>
   );
 };
 
