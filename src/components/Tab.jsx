@@ -27,6 +27,58 @@ const ModulerKitchen = [
     img: "/src/assets/media/6kitchen.eb10ee31.jpg",
   },
 ];
+const LivingRoom = [
+  {
+    id: 1,
+    img: "/src/assets/media/L4.66988f9c.jpg",
+  },
+  {
+    id: 2,
+    img: "/src/assets/media/L6.c64f19f9.jpg",
+  },
+  {
+    id: 3,
+    img: "/src/assets/media/L5.31140891.jpg",
+  },
+  {
+    id: 4,
+    img: "/src/assets/media/L1.d6c59dc3.jpg",
+  },
+  {
+    id: 5,
+    img: "/src/assets/media/L2.e9c5cb86.jpg",
+  },
+  {
+    id: 6,
+    img: "/src/assets/media/L2.e9c5cb86.jpg",
+  },
+];
+const BedRoom = [
+  {
+    id: 1,
+    img: "/src/assets/media/B4.a046cdcc.jpg",
+  },
+  {
+    id: 2,
+    img: "/src/assets/media/B3.48e79bb7.jpg",
+  },
+  {
+    id: 3,
+    img: "/src/assets/media/B5.cc34f7d7.jpg",
+  },
+  {
+    id: 4,
+    img: "/src/assets/media/B6.a9c05abe.jpg",
+  },
+  {
+    id: 5,
+    img: "/src/assets/media/B1.6102cc42.jpg",
+  },
+  {
+    id: 6,
+    img: "/src/assets/media/B2.95a4cd78.jpg",
+  },
+];
 const Tab = () => {
   const [tab, setTab] = useState({
     Moduler: true,
@@ -55,7 +107,10 @@ const Tab = () => {
             style={
               tab.Living ? { backgroundColor: "#0E416A", color: "#fff" } : null
             }
-            onClick={() => setTab({ Moduler: false, Living: true, Bed: false })}
+            onClick={() => {
+              setArr(LivingRoom);
+              setTab({ Moduler: false, Living: true, Bed: false });
+            }}
           >
             Living Rooms
           </li>
@@ -63,17 +118,28 @@ const Tab = () => {
             style={
               tab.Bed ? { backgroundColor: "#0E416A", color: "#fff" } : null
             }
-            onClick={() => setTab({ Moduler: false, Living: false, Bed: true })}
+            onClick={() => {
+              setArr(BedRoom);
+              setTab({ Moduler: false, Living: false, Bed: true });
+            }}
           >
             Bed Rooms
           </li>
         </ul>
       </div>
       <br />
+      <br />
+      <br />
+      <br />
       <div className="body">
         {arr.map((item, index) => {
           return (
-            <div key={item.id}>
+            <div key={item.id} className="tab-card">
+              <div className="overlay">
+                {/* <center> */}
+                  <button>View Details</button>
+                {/* </center> */}
+              </div>
               <img src={item.img} />
             </div>
           );

@@ -109,7 +109,13 @@ const Home = () => {
         </div>
       </div>
       <br />
+      <br />
+      <br />
       <Tab />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="subscribe">
         <main>
           <h1>Subscribe to our Email</h1>

@@ -1,40 +1,69 @@
-.tab-section{
-    .head{
-        justify-content: space-around;
+.tab-section {
+  .head {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+      color: #243e63;
+      font-weight: 300;
+    }
+    ul {
+      padding: 7px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: 1rem;
+      background-color: #e2e8f0;
+      li {
+        list-style: none;
+        padding: 10px 1rem;
+        color: #5d5568;
+      }
+    }
+  }
+  .body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 88%;
+    gap: 7px;
+    margin: auto;
+    div {
+      background-color: #edf2f7;
+      padding: 15px;
+      img {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        h1{
-            color: #243E63;
-            font-weight: 300;
-        }
-        ul{
-            padding: 7px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            gap: 1rem;
-            background-color: #E2E8F0;
-            li{
-                list-style: none;
-                padding: 10px 1rem;
-                color: #5D5568;
-            }
-        }
+      }
     }
-    .body{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 88%;
-        gap: 7px;
-        margin: auto;
-        div{
-            background-color: #EDF2F7;
-            padding: 15px;
-            img{
-                width: 100%;
-            }
-        }
+  }
+  .tab-card {
+    position: relative;
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 95%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      height: 20%;
+      button {
+        background-color: #243e63;
+        color: #fff;
+        padding: 10px;
+        border: none;
+      }
     }
+    @mixin animation-mixin {
+      height: 90%;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      .overlay {
+        @include animation-mixin;
+        visibility: visible;
+      }
+    }
+  }
 }
