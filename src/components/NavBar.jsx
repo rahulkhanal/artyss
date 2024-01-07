@@ -48,7 +48,7 @@ const Navigation = () => {
             Blog
           </NavLink>
           <NavLink
-            to="/"
+            to="/portfolio"
             onClick={() => setShowMenu(false)}
             style={navLinkStyle}
           >

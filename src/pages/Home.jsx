@@ -38,6 +38,7 @@ const Home = () => {
         showIndicators={true}
         showThumbs={false}
         swipeable={true}
+        emulateTouch={true}
       >
         {bannerData.map((item, index) => {
           return (
