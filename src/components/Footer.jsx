@@ -20,10 +20,34 @@ const Footer = () => {
           <br />
           <br />
           <div className="footer-social">
-            <FaFacebook size={25} />
-            <FaInstagram size={25} />
-            <FaYoutube size={25} />
-            <FaLinkedin size={25} />
+            <FaFacebook
+              size={25}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.facebook.com/artyssdesignstudio")
+              }
+            />
+            <FaInstagram
+              size={25}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/artyss_studio/")
+              }
+            />
+            <FaYoutube
+              size={25}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.youtube.com/channel/UC6ON5yb7iQ2P_yzjqPWZV1Q")
+              }
+            />
+            <FaLinkedin
+              size={25}
+              onClick={() =>
+                (window.location.href =
+                  "https://www.linkedin.com/company/artyss/")
+              }
+            />
           </div>
         </div>
         <div className="mid-footer main-div">

@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": {
+    "name": "Digital Pravidhi",
+    "url": "https://digitalpravidhi.com",
+    "email": "info@digitalpravidhi.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

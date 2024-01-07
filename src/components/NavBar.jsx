@@ -63,7 +63,7 @@ const Navigation = () => {
           />
           <div className={NavCss.cart}>
             <NavLink
-              to="/admin"
+              to="/consultation"
               onClick={() => setShowMenu(false)}
               className={NavCss.loginBtn}
               style={navLinkStyle}
