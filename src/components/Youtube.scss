@@ -1,0 +1,29 @@
+.youtube {
+  padding: 5rem;
+  .slick-arrow {
+    background-color: #243e63;
+    border-radius: 50%;
+    scale: 1.5;
+  }
+  .slick-arrow:hover {
+    background-color: #243e63;
+  }
+  .slick-arrow:active {
+    background-color: #243e63;
+  }
+  .client-head {
+    h1 {
+      color: #243e63;
+      font-weight: 400;
+      font-size: 2.5rem;
+    }
+  }
+  .slick-slide {
+    // padding: 3rem;
+  }
+  .card {
+    // padding: 2rem;
+    margin: auto;
+    height: 350px;
+  }
+}

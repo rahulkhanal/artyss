@@ -3,6 +3,8 @@ import "./home.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Tab from "../components/Tab";
+import Client from "../components/client-testimonial";
+import Youtube from "../components/Youtube";
 
 const Home = () => {
   const [bannerData, setBannerDta] = useState([
@@ -115,6 +117,38 @@ const Home = () => {
       <br />
       <br />
       <br />
+      <div className="choose">
+        <h1>Why choose us?</h1>
+        <br />
+        <br />
+        <br />
+        <div>
+          <article>
+            <img src="/src/assets/choose1.png" alt="" />
+            <br />
+            <strong>EXPERIENCED</strong>
+          </article>
+          <article>
+            <img src="/src/assets/choose2.png" alt="" />
+            <br />
+            <strong>STATE - OF THE ART FACTORY</strong>
+          </article>
+          <article>
+            <img src="/src/assets/choose3.png" alt="" />
+            <br />
+            <strong>3D & VR RENDERING</strong>
+          </article>
+          <article>
+            <img src="/src/assets/choose1.png" alt="" />
+            <br />
+            <strong>ON-TIME DELIVERY & INSTALLATION</strong>
+          </article>
+        </div>
+      </div>
+      <br />
+      <Client />
+      <br />
+      <Youtube />
       <br />
       <div className="subscribe">
         <main>
