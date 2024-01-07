@@ -1,0 +1,73 @@
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+.Contact {
+  .hero {
+    width: 99vw;
+    height: 500px;
+    img {
+      height: 90%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .social {
+    text-align: center;
+    color: #0e416a;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contact-section {
+    text-align: center;
+    h1 {
+      font-weight: 500;
+      color: #0e416a;
+    }
+  }
+  form {
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0 0 8px #d3d3d3;
+    padding: 3rem 1rem;
+    background-color: transparent;
+    border-radius: 7px;
+    @include mobile{
+        width: 95%;
+    }
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 7px;
+      input {
+        padding: 7px;
+        font-size: 1rem;
+      }
+      button {
+        padding: 10px;
+        font-size: 1rem;
+        background-color: #0e416a;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        margin: auto;
+        width: 50%;
+        transition: all 0.15s ease;
+        &:hover {
+          width: 100%;
+          transition: all 0.15s ease;
+        }
+      }
+    }
+  }
+}

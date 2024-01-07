@@ -41,7 +41,7 @@ const Navigation = () => {
             Home
           </NavLink>
           <NavLink
-            to="/explore-products"
+            to="/blog"
             onClick={() => setShowMenu(false)}
             style={navLinkStyle}
           >
@@ -54,7 +54,7 @@ const Navigation = () => {
           >
             Portfolio
           </NavLink>
-          <NavLink to="/">Contact Us</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
           <TiDelete
             size={35}
             className={NavCss.crossBtn}
