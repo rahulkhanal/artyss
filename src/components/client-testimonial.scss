@@ -1,13 +1,30 @@
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .client {
   background-color: #0e416a;
   padding: 5rem;
-  .slick-slide{
+  @include mobile{
+    padding: 0rem;
+  }
+  .slick-slide {
     padding: 3rem;
+    @include mobile{
+      padding: 1rem;
+    }
   }
-  .slick-arrow{
-      scale: 1.7;
+  .slick-arrow {
+    scale: 1.7;
   }
-  .card{
+  .card {
     background-color: #fff;
     padding: 3rem 2.5rem;
     width: 100px;
@@ -18,18 +35,18 @@
     display: flex !important;
     flex-direction: column;
     justify-content: space-around;
-    p{
-        word-spacing: 10px;
-        color: #080000;
-        font-weight: 400;
-        line-height: 1.6rem;
+    p {
+      word-spacing: 10px;
+      color: #080000;
+      font-weight: 400;
+      line-height: 1.6rem;
     }
-    i{
-        font-weight: 500;
-        font-size: 13px;
-        border-top: 2px solid #0e416a;
-        width: 100px;
-        padding-top: 1.3rem;
+    i {
+      font-weight: 500;
+      font-size: 13px;
+      border-top: 2px solid #0e416a;
+      width: 100px;
+      padding-top: 1.3rem;
     }
   }
   h1 {

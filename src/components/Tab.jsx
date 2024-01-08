@@ -4,79 +4,79 @@ import "./Tab.scss";
 const ModulerKitchen = [
   {
     id: 1,
-    img: "/src/assets/media/oneKitchen.ef12dc70.jpg",
+    img: "/materials/media/oneKitchen.ef12dc70.jpg",
   },
   {
     id: 2,
-    img: "/src/assets/media/2kitchen.d9f740a9.jpg",
+    img: "/materials/media/2kitchen.d9f740a9.jpg",
   },
   {
     id: 3,
-    img: "/src/assets/media/3kitchen.4b06db37.jpg",
+    img: "/materials/media/3kitchen.4b06db37.jpg",
   },
   {
     id: 4,
-    img: "/src/assets/media/4kitchen.8a6cbda5.jpg",
+    img: "/materials/media/4kitchen.8a6cbda5.jpg",
   },
   {
     id: 5,
-    img: "/src/assets/media/5kitchen.8d1d9691.jpg",
+    img: "/materials/media/5kitchen.8d1d9691.jpg",
   },
   {
     id: 6,
-    img: "/src/assets/media/6kitchen.eb10ee31.jpg",
+    img: "/materials/media/6kitchen.eb10ee31.jpg",
   },
 ];
 const LivingRoom = [
   {
     id: 1,
-    img: "/src/assets/media/L4.66988f9c.jpg",
+    img: "/materials/media/L4.66988f9c.jpg",
   },
   {
     id: 2,
-    img: "/src/assets/media/L6.c64f19f9.jpg",
+    img: "/materials/media/L6.c64f19f9.jpg",
   },
   {
     id: 3,
-    img: "/src/assets/media/L5.31140891.jpg",
+    img: "/materials/media/L5.31140891.jpg",
   },
   {
     id: 4,
-    img: "/src/assets/media/L1.d6c59dc3.jpg",
+    img: "/materials/media/L1.d6c59dc3.jpg",
   },
   {
     id: 5,
-    img: "/src/assets/media/L2.e9c5cb86.jpg",
+    img: "/materials/media/L2.e9c5cb86.jpg",
   },
   {
     id: 6,
-    img: "/src/assets/media/L2.e9c5cb86.jpg",
+    img: "/materials/media/L2.e9c5cb86.jpg",
   },
 ];
 const BedRoom = [
   {
     id: 1,
-    img: "/src/assets/media/B4.a046cdcc.jpg",
+    img: "/materials/media/B4.a046cdcc.jpg",
   },
   {
     id: 2,
-    img: "/src/assets/media/B3.48e79bb7.jpg",
+    img: "/materials/media/B3.48e79bb7.jpg",
   },
   {
     id: 3,
-    img: "/src/assets/media/B5.cc34f7d7.jpg",
+    img: "/materials/media/B5.cc34f7d7.jpg",
   },
   {
     id: 4,
-    img: "/src/assets/media/B6.a9c05abe.jpg",
+    img: "/materials/media/B6.a9c05abe.jpg",
   },
   {
     id: 5,
-    img: "/src/assets/media/B1.6102cc42.jpg",
+    img: "/materials/media/B1.6102cc42.jpg",
   },
   {
     id: 6,
-    img: "/src/assets/media/B2.95a4cd78.jpg",
+    img: "/materials/media/B2.95a4cd78.jpg",
   },
 ];
 const Tab = () => {

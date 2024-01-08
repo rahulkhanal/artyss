@@ -27,6 +27,8 @@ const Youtube = () => {
           dots: false,
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: true,
+          centerPadding: "7px",
         },
       },
     ],

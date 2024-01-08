@@ -140,15 +140,16 @@
     margin-top: 1.5rem;
   }
   .loginBtn {
-    width: 80% !important;
+    width: 100% !important;
+    margin: auto;
   }
   .cart {
-    position: fixed;
-    animation: none;
-    scale: 1.1 !important;
-    background-color: #fff;
-    padding: 0.5rem;
-    border-radius: 50%;
+    /* position: fixed; */
+    /* animation: none; */
+    /* scale: 1.1 !important; */
+    /* background-color: #fff; */
+    /* padding: 0.5rem; */
+    /* border-radius: 50%; */
   }
 }
 

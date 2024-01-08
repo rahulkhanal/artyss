@@ -1,5 +1,18 @@
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
 .youtube {
   padding: 5rem;
+  @include mobile{
+    padding: 1.9rem;
+  }
   .slick-arrow {
     background-color: #243e63;
     border-radius: 50%;

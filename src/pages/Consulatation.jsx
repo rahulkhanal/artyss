@@ -5,7 +5,7 @@ const Consulatation = () => {
   return (
     <div className="Consulatation">
       <div className="left">
-        <img src="/src/assets/media/bookCov.15248870.jpg" alt="" />
+        <img src="/materials/media/bookCov.15248870.jpg" alt="" />
       </div>
       <div className="right">
         <h1>Request here</h1>
@@ -18,6 +18,7 @@ const Consulatation = () => {
           <button type="submit">Request</button>
         </form>
       </div>
+      <br />
     </div>
   );
 };

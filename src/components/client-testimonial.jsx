@@ -11,6 +11,7 @@ const Client = () => {
     // centerMode: true,
     // centerPadding: "50px",
     dots: false,
+    
 
     responsive: [
       {
@@ -19,6 +20,7 @@ const Client = () => {
           dots: false,
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],

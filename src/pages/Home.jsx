@@ -12,19 +12,19 @@ const Home = () => {
       id: 1,
       title: "Thoughtfully curated Interiors Solution",
       slogan: "Artify Your Living Space",
-      img: "/src/assets/media/banner1.62cc4589.png",
+      img: "/materials/media/banner1.62cc4589.png",
     },
     {
       id: 2,
       title: "Thoughtfully curated Interiors Solution",
       slogan: "Artify Your Living Space",
-      img: "/src/assets/media/banner2.a5005769.png",
+      img: "/materials/media/banner2.a5005769.png",
     },
     {
       id: 3,
       title: "Thoughtfully curated Interiors Solution",
       slogan: "Artify Your Living Space",
-      img: "/src/assets/media/banner3.916aefb7.png",
+      img: "/materials/media/banner3.916aefb7.png",
     },
   ]);
   return (
@@ -79,18 +79,18 @@ const Home = () => {
           <br />
           <div className="img-layer">
             <img
-              src="/src/assets/media/interior-design-living-area.1ac04d0b.jpg"
+              src="/materials/media/interior-design-living-area.1ac04d0b.jpg"
               alt=""
             />
-            <img src="/src/assets/media/interier-2.97a7c44c.jpg" alt="" />
-            <img src="/src/assets/media/interier-3.e937159f.jpg" alt="" />
+            <img src="/materials/media/interier-2.97a7c44c.jpg" alt="" />
+            <img src="/materials/media/interier-3.e937159f.jpg" alt="" />
           </div>
           <br />
           <br />
           <button>Learn More</button>
         </div>
         <div className="home2-s">
-          <img src="/src/assets/media/aboutImg.277b4001.jpg" alt="" srcset="" />
+          <img src="/materials/media/aboutImg.277b4001.jpg" alt="" />
         </div>
       </div>
       <div className="home3">
@@ -125,22 +125,22 @@ const Home = () => {
         <br />
         <div>
           <article>
-            <img src="/src/assets/choose1.png" alt="" />
+            <img src="/materials/choose1.png" alt="" />
             <br />
             <strong>EXPERIENCED</strong>
           </article>
           <article>
-            <img src="/src/assets/choose2.png" alt="" />
+            <img src="/materials/choose2.png" alt="" />
             <br />
             <strong>STATE - OF THE ART FACTORY</strong>
           </article>
           <article>
-            <img src="/src/assets/choose3.png" alt="" />
+            <img src="/materials/choose3.png" alt="" />
             <br />
             <strong>3D & VR RENDERING</strong>
           </article>
           <article>
-            <img src="/src/assets/choose1.png" alt="" />
+            <img src="/materials/choose1.png" alt="" />
             <br />
             <strong>ON-TIME DELIVERY & INSTALLATION</strong>
           </article>

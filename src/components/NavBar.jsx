@@ -1,4 +1,4 @@
-import Logo from "../assets/media/logo.png";
+import Logo from "/materials/media/logo.png";
 // import HamBurger from "./assets/hamburger.png";
 import { RxHamburgerMenu as HamBurger } from "react-icons/rx";
 
@@ -54,7 +54,7 @@ const Navigation = () => {
           >
             Portfolio
           </NavLink>
-          <NavLink to="/contact">Contact Us</NavLink>
+          <NavLink to="/contact" onClick={() => setShowMenu(false)}>Contact Us</NavLink>
           <TiDelete
             size={35}
             className={NavCss.crossBtn}

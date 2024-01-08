@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <div className="Portfolio">
       <div className="hero">
-        <img src="/src/assets/media/step3.c9764d34.jpeg" alt="" />
+        <img src="/materials/media/step3.c9764d34.jpeg" alt="" />
       </div>
       <br />
       <br />
@@ -65,13 +65,13 @@ const Portfolio = () => {
             </p>
           </div>
           <div className="right">
-            <img src="/src/assets/media/book.846de960.jpg" alt="" />
+            <img src="/materials/media/book.846de960.jpg" alt="" />
           </div>
         </article>
       </div>
       <div className="last">
-        <img src="/src/assets/media/oneBedroom.8914fec9.webp" alt="" />
-        <img src="/src/assets/media/fourBedroom.733cefc4.webp" alt="" />
+        <img src="/materials/media/oneBedroom.8914fec9.webp" alt="" />
+        <img src="/materials/media/fourBedroom.733cefc4.webp" alt="" />
       </div>
       <br />
     </div>

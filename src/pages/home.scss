@@ -122,7 +122,7 @@
 .home3 {
   padding: 1rem 4rem;
   background-color: red;
-  background: url("../assets/media/mostbanner.6464cfdd.jpg");
+  background: url("/materials/media/mostbanner.6464cfdd.jpg");
   height: 60vh;
   @include mobile {
     padding: 2.5rem 7px;
@@ -167,7 +167,7 @@
 }
 
 .subscribe {
-  background-image: url("../assets/media/ctabanner.9e543a43.png");
+  background-image: url("/materials/media/ctabanner.9e543a43.png");
   display: grid;
   place-items: center;
   color: #fff;
