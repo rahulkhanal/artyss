@@ -25,7 +25,7 @@ const Navigation = () => {
             <img
               src={Logo}
               alt="Nepal Canvas"
-              onClick={() => navigate("/explore")}
+              onClick={() => navigate("/")}
             />
           </div>
           <div className={NavCss.HamBurger}>
@@ -40,13 +40,7 @@ const Navigation = () => {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/blog"
-            onClick={() => setShowMenu(false)}
-            style={navLinkStyle}
-          >
-            Blog
-          </NavLink>
+          <a href="https://artyss.in/blog/">Blog</a>
           <NavLink
             to="/portfolio"
             onClick={() => setShowMenu(false)}
@@ -54,7 +48,9 @@ const Navigation = () => {
           >
             Portfolio
           </NavLink>
-          <NavLink to="/contact" onClick={() => setShowMenu(false)}>Contact Us</NavLink>
+          <NavLink to="/contact" onClick={() => setShowMenu(false)}>
+            Contact Us
+          </NavLink>
           <TiDelete
             size={35}
             className={NavCss.crossBtn}

@@ -165,7 +165,7 @@
     align-items: center;
   }
   .Navigation {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     flex-direction: column;
     height: 4.3rem;
   }
@@ -212,15 +212,15 @@
     margin-top: 1.5rem;
   }
   .loginBtn {
-    width: 80%;
+    width: 100%;
   }
   .cart {
-    position: fixed;
+    /* position: fixed;
     animation: none;
     scale: 1.5 !important;
     background-color: #fff;
     padding: 0.5rem;
-    border-radius: 50%;
+    border-radius: 50%; */
   }
 }
 .Navigation2 {
@@ -269,5 +269,8 @@ Navigation2 input::-ms-input-placeholder {
 @media (min-width: 0px) and (max-width: 1024px) {
   .navigationSearch {
     display: none !important;
+  }
+  .Logo > img {
+    width: 80%;
   }
 }

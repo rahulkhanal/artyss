@@ -11,14 +11,21 @@ const Client = () => {
     // centerMode: true,
     // centerPadding: "50px",
     dots: false,
-    
-
     responsive: [
       {
         breakpoint: 800,
         settings: {
           dots: false,
           slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          dots: false,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
         },
