@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import Tab from "../components/Tab";
 import Client from "../components/client-testimonial";
 import Youtube from "../components/Youtube";
+import Blog from "./Blog";
 
 const Home = () => {
   const [bannerData, setBannerDta] = useState([
@@ -150,6 +151,8 @@ const Home = () => {
       <Client />
       <br />
       <Youtube />
+      <br />
+      <Blog />
       <br />
       <div className="subscribe">
         <main>

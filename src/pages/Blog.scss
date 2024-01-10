@@ -1,0 +1,57 @@
+@mixin tablet {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+.Blog {
+  padding: 1rem 3rem;
+  @include mobile{
+    padding: 7px;
+  }
+  .head {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    h1 {
+      color: #0e416a;
+      font-weight: 500;
+    }
+  }
+  .cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    h4 {
+      font-weight: 600;
+      color: #0e416a;
+    }
+    p {
+      line-height: 20px;
+      word-spacing: 7px;
+      color: #210839;
+    }
+    a {
+      text-decoration: none;
+      color: #0e416a;
+      font-weight: 700;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 500px;
+      margin: auto;
+      min-width: 300px;
+      max-width: 450px;
+      box-shadow: 0 0 8px #d3d3d3;
+      padding: 1rem;
+      border-radius: 7px;
+    }
+  }
+}
