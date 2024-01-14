@@ -8,11 +8,11 @@ const Footer = () => {
       <footer>
         <div className="main-div">
           <div className="footer-img">
-            <img src="/src/assets/media/footer.png" alt="" />
+            <img src="materials/media/footer.png" alt="" />
           </div>
           <br />
           <span>
-            Artyss Design Studio is a team of smallassionate and experienced
+            Artyss Design Studio is a team of small passionate and experienced
             designers who are committed to providing you with an experience
             unlike any other, where you can enjoy great design and
             craftsmanship.

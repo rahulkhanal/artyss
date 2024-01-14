@@ -13,10 +13,12 @@ footer {
   display: flex;
   color: #fff;
   flex-wrap: wrap;
-  padding: 4rem 10rem;
+  padding: 4rem 4rem;
   justify-content: space-between;
-  font-size: 1rem;
-
+  // font-size: 1rem;
+  @include tablet {
+    padding: 1rem;
+  }
   @include mobile {
     padding: 7px;
   }
@@ -27,11 +29,19 @@ footer {
       width: 100%;
       text-align: center;
     }
+    @include tablet {
+      width: 100%;
+      text-align: center;
+    }
     p {
       text-align: left;
       margin: auto;
       width: fit-content;
       @include mobile {
+        width: 100%;
+        text-align: center;
+      }
+      @include tablet {
         width: 100%;
         text-align: center;
       }
@@ -47,6 +57,11 @@ footer {
       text-align: center;
       justify-content: space-around;
     }
+    @include tablet {
+      width: 100%;
+      text-align: center;
+      justify-content: space-around;
+    }
   }
 
   li {
@@ -54,6 +69,9 @@ footer {
     line-height: 2rem;
     text-align: left;
     @include mobile {
+      text-align: center;
+    }
+    @include tablet {
       text-align: center;
     }
   }
@@ -67,6 +85,11 @@ footer {
   gap: 1rem;
   width: 100%;
   @include mobile {
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  @include tablet {
     justify-content: center;
     margin-bottom: 2rem;
     width: 100%;
