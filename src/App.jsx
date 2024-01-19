@@ -20,8 +20,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/consultation" element={<Consulatation />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };

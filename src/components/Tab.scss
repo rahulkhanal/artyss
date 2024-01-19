@@ -86,11 +86,11 @@
         background-color: #243e63;
         color: #fff;
         padding: 10px;
-        transition: all 0.3s ease;
+        transition: scale 0.3s ease;
         border: none;
         &:hover{
           scale: 1.1;
-          transition: all 0.3s ease;
+          transition: scale 0.3s ease;
         }
       }
     }

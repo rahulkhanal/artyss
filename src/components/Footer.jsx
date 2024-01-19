@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -58,16 +59,16 @@ const Footer = () => {
               <br />
               <ul>
                 <li>
-                  <a href="">Blog</a>
+                  <a href="https://artyss.in/blog/">Blog</a>
                 </li>
                 <li>
-                  <a href="">FAQs</a>
+                  <a href="#">FAQs</a>
                 </li>
                 <li>
-                  <a href="">Support</a>
+                  <Link to="/consultation">Support</Link>
                 </li>
                 <li>
-                  <a href="">About Us</a>
+                  <Link to="/portfolio">About Us</Link>
                 </li>
               </ul>
             </div>
@@ -79,13 +80,13 @@ const Footer = () => {
               <br />
               <ul>
                 <li>
-                  <a href="">Terms of Service</a>
+                  <a href="#">Terms of Service</a>
                 </li>
                 <li>
-                  <a href="">Disclaimer</a>
+                  <a href="#">Disclaimer</a>
                 </li>
                 <li>
-                  <a href="">Privacy Policy</a>
+                  <a href="#">Privacy Policy</a>
                 </li>
               </ul>
             </div>

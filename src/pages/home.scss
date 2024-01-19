@@ -121,12 +121,11 @@
 }
 .home3 {
   padding: 1rem 4rem;
-  background-color: red;
   background: url("/materials/media/mostbanner.6464cfdd.jpg");
   height: auto;
   @include mobile {
     padding: 2.5rem 7px;
-    height: 70vh;
+    height: auto;
   }
   div {
     height: auto;
@@ -201,9 +200,9 @@
       width: 100%;
     }
   }
-  button{
-    background-color: #295F8B;
-    border: 2px solid #295F8B;
+  button {
+    background-color: #295f8b;
+    border: 2px solid #295f8b;
     color: #fff;
   }
   main {

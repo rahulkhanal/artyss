@@ -6,8 +6,10 @@ import Tab from "../components/Tab";
 import Client from "../components/client-testimonial";
 import Youtube from "../components/Youtube";
 import Blog from "./Blog";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const Navigate = useNavigate();
   const [bannerData, setBannerDta] = useState([
     {
       id: 1,
@@ -88,7 +90,7 @@ const Home = () => {
           </div>
           <br />
           <br />
-          <button>Learn More</button>
+          <button onClick={() => Navigate("/portfolio")}>Learn More</button>
         </div>
         <div className="home2-s">
           <img src="/materials/media/aboutImg.277b4001.jpg" alt="" />
@@ -109,7 +111,9 @@ const Home = () => {
           </p>
           <br />
           <br />
-          <button>Book a Consultation</button>
+          <button onClick={() => Navigate("/consultation")}>
+            Book a Consultation
+          </button>
         </div>
       </div>
       <br />
