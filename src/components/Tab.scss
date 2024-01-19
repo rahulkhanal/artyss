@@ -14,6 +14,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 4px;
     h1 {
       color: #243e63;
       font-weight: 300;
@@ -25,20 +26,34 @@
       cursor: pointer;
       gap: 1rem;
       background-color: #e2e8f0;
+      flex-wrap: wrap;
       li {
         list-style: none;
         padding: 10px 1rem;
         color: #5d5568;
+        min-width: 170px;
+        text-align: center;
       }
     }
   }
   .body {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
     width: 88%;
     gap: 7px;
     margin: auto;
+    // @media only screen and (min-width: 300px) and (max-width: 900px) {
+    // }
+    @include tablet {
+      width: 100%;
+      gap: 4px;
+    }
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
     div {
       background-color: #edf2f7;
       padding: 15px;
@@ -49,8 +64,13 @@
   }
   .tab-card {
     position: relative;
-    @include tablet{
-      width: 350px;
+    // width: 100%;
+    @include tablet {
+      // min-width: 350px;
+      // margin: auto;
+    }
+    @include mobile {
+      min-width: 350px;
       margin: auto;
     }
     .overlay {
@@ -66,7 +86,12 @@
         background-color: #243e63;
         color: #fff;
         padding: 10px;
+        transition: all 0.3s ease;
         border: none;
+        &:hover{
+          scale: 1.1;
+          transition: all 0.3s ease;
+        }
       }
     }
     @mixin animation-mixin {
