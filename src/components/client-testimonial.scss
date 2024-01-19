@@ -36,9 +36,10 @@
     flex-direction: column;
     justify-content: space-around;
     p {
-      word-spacing: 10px;
+      // word-spacing: 10px;
       color: #080000;
-      font-weight: 400;
+      font-weight: 350;
+      text-align: justify;
       line-height: 1.6rem;
     }
     i {

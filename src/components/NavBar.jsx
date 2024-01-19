@@ -13,7 +13,7 @@ const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
   const navLinkStyle = ({ isActive }) => {
     return {
-      fontWeight: isActive ? "500" : "none",
+      // fontWeight: isActive ? "500" : "none",
       // color: isActive ? "#ed1c22" : "",
     };
   };
