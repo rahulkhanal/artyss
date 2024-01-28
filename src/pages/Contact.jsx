@@ -2,20 +2,12 @@ import React, { useState } from "react";
 import "./Contact.scss";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import emailjs from "emailjs-com";
-import {
-  Box,
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  Modal,
-  Typography,
-} from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 
 const Contact = () => {
-  const [modal, setModal] = useState(false);
+  const Navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const serviceID = "service_empxgwh";
   const templateID = "template_p5ekyrs";
   const userID = "r_RiIwtDiTIr1C7fQ";
@@ -34,16 +26,21 @@ const Contact = () => {
     };
     e.preventDefault();
     console.log(templateParamsDemo);
+    setLoading(true);
     emailjs
       .send(serviceID, templateID, templateParamsDemo, userID)
       .then((response) => {
         console.log("Email sent successfully:", response);
         if (response.status == 200) {
-          setModal(true);
+          // setModal(true);
+          Navigate("/sucess-response", { state: { message: response.status } });
         }
       })
       .catch((error) => {
         console.error("Error sending email:", error);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   }
   return (
@@ -121,7 +118,9 @@ const Contact = () => {
             <br />
             <br />
             <div className="form-row">
-              <button type="submit">Submit</button>
+              <button type="submit" disabled={loading}>
+                {loading ? <ClipLoader color="#fff" size={25}/> : "Submit"}
+              </button>
             </div>
           </form>
         </div>
@@ -160,44 +159,6 @@ const Contact = () => {
         </div>
         <br />
       </div>
-      <Dialog
-        open={modal}
-        style={{ textAlign: "center" }}
-        className="modal"
-        // onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <br />
-        <img
-          src="/materials/mail.png"
-          width={50}
-          style={{ margin: "auto" }}
-          alt=""
-        />
-        <DialogTitle id="alert-dialog-title">Thank You</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Your Submission has been received.
-          </DialogContentText>
-          <DialogContentText id="alert-dialog-description">
-            We will be in touch and contact you soon.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button
-            onClick={() => {window.location.reload()}}
-            variant="contained"
-            style={{ backgroundColor: "#0E416A" }}
-          >
-            Return
-          </Button>
-          {/* <Button onClick={handleClose}>Disagree</Button>
-          <Button onClick={handleClose} autoFocus>
-            Agree
-          </Button> */}
-        </DialogActions>
-      </Dialog>
     </>
   );
 };
