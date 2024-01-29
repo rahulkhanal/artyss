@@ -15,6 +15,7 @@ const Consulatation = () => {
     email: "",
     addr: "Consultation required",
     message: "I need consultation please.",
+    number: "",
   });
   function handleSubmit(e) {
     const templateParamsDemo = {
@@ -22,6 +23,7 @@ const Consulatation = () => {
       from_email: templateParams.email,
       from_address: templateParams.addr,
       message: templateParams.message,
+      number: templateParams.number,
     };
     e.preventDefault();
     setloading(true);
@@ -60,6 +62,17 @@ const Consulatation = () => {
                 setTempleteParams({ ...templateParams, name: e.target.value })
               }
             />
+            <br />
+            <input
+              type="tel"
+              placeholder="Contact Number"
+              required
+              value={templateParams.number}
+              onChange={(e) =>
+                setTempleteParams({ ...templateParams, number: e.target.value })
+              }
+            />
+            <br />
             <input
               type="email"
               placeholder="Email"
@@ -71,7 +84,7 @@ const Consulatation = () => {
             />
             <br />
             <button type="submit" disabled={loading}>
-              {loading ? <ClipLoader color="#fff" size={25}/> : "Request"}
+              {loading ? <ClipLoader color="#fff" size={25} /> : "Request"}
             </button>
           </form>
         </div>

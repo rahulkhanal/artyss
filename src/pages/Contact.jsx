@@ -16,6 +16,7 @@ const Contact = () => {
     email: "",
     addr: "",
     message: "",
+    number: ""
   });
   function handleSubmit(e) {
     const templateParamsDemo = {
@@ -94,6 +95,20 @@ const Contact = () => {
                     ...templateParams,
                     email: e.target.value,
                   })
+                }
+                required
+              />
+            </div>
+            <br />
+            <div className="form-row">
+              <label htmlFor="name">Contact</label>
+              <input
+                type="tel"
+                id="name"
+                name="name"
+                value={templateParams.number}
+                onChange={(e) =>
+                  setTempleteParams({ ...templateParams, number: e.target.value })
                 }
                 required
               />
